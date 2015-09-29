@@ -7,7 +7,7 @@ Version: 1.0.0
 Author URI: http://jeffmatson.net
 */
 
-if ( ! class_exists("Prompt_Api" ) ){
+if ( ! class_exists("Prompt_Core" ) ){
     add_action('admin_notices', 'postmatic_not_installed');
 }
 if ( ! class_exists("GFForms" ) ){
