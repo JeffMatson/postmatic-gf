@@ -1,12 +1,11 @@
 <?php
 /*
-Plugin Name: Postmatic Integration for Gravity Forms
+Plugin Name: Postmatic for Gravity Forms
 Description: Gravity Forms integration for Postmatic
 Author: Jeff Matson
 Version: 1.0.0
 Author URI: http://jeffmatson.net
 */
-
 
 function postmatic_gf_check_dependencies() {
     if (!class_exists("Prompt_Core")) {
@@ -30,11 +29,6 @@ function postmatic_not_installed() {
     $message = "Postmatic is not installed or activated!  You will need to install and activate Postmatic before using this plugin!";
     echo"<div class=\"$class\"> <p>$message</p></div>";
 }
-
-
-
-
-
 
 if (class_exists("GFForms")) {
 
