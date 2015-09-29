@@ -7,12 +7,17 @@ Version: 1.0.0
 Author URI: http://jeffmatson.net
 */
 
-if ( ! class_exists("Prompt_Core" ) ){
-    add_action('admin_notices', 'postmatic_not_installed');
+
+function postmatic_gf_check_dependencies() {
+    if (!class_exists("Prompt_Core")) {
+        add_action('admin_notices', 'postmatic_not_installed');
+    }
+    if (!class_exists("GFForms")) {
+        add_action('admin_notices', 'gf_not_installed');
+    }
 }
-if ( ! class_exists("GFForms" ) ){
-    add_action( 'admin_notices', 'gf_not_installed' );
-}
+add_action( 'plugins_loaded', 'postmatic_gf_check_dependencies' );
+
 
 function gf_not_installed() {
     $class = "error";
