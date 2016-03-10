@@ -3,7 +3,7 @@ Contributors: JeffMatson
 Tags: postmatic, gravityforms
 Donate link: http://jeffmatson.net/donate
 Requires at least: 3.8
-Tested up to: 4.3
+Tested up to: 4.4
 License: GPLv2
 Stable tag: trunk
 

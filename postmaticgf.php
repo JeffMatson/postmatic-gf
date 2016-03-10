@@ -3,7 +3,7 @@
 Plugin Name: Postmatic for Gravity Forms
 Description: Gravity Forms integration for Postmatic
 Author: Jeff Matson
-Version: 1.0.0
+Version: 1.1
 Author URI: http://jeffmatson.net
 */
 
